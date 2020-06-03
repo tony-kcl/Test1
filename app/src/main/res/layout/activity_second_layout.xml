@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondLayout">
+
+    <TextView
+        android:id="@+id/aTextView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="A"
+        android:textSize="20dp"
+        android:background="#00FF00"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/cTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#005432"
+        app:layout_constraintLeft_toRightOf="@+id/aTextView"
+        app:layout_constraintRight_toLeftOf="@+id/bTextView"
+        app:layout_constraintTop_toBottomOf="@+id/aTextView"
+        app:layout_constraintBottom_toTopOf="@+id/dTextView"/>
+    <TextView
+        android:id="@+id/dTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:gravity="center|top"
+        android:background="#005432"
+        app:layout_constraintLeft_toRightOf="@+id/aTextView"
+        app:layout_constraintRight_toLeftOf="@+id/bTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cTextView"
+        app:layout_constraintBottom_toTopOf="@+id/bTextView"/>
+
+    <TextView
+        android:id="@+id/bTextView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="B"
+        android:textSize="20dp"
+        android:background="#00FF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
